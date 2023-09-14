@@ -12,7 +12,7 @@
 - Open your terminal.
 - Navigate to the directory where you want to clone the project repository.
 - Run the following command to clone the repository:
-- git clone <https://github.com/fsp3012/hngfrontendtask1>
+- git clone <https://github.com/fsp3012/hngfrontendtask2>
 
 **Install Dependencies**
 - Navigate to the project's root directory in your terminal:
