@@ -139,7 +139,7 @@ const HomePage = () => {
           <img src={instagram} alt="" />
           <img src={youtube} alt="" />
         </div>
-        <div className="flex flex-col md:flex items-center gap-5 py-5">
+        <div className="flex flex-col md:flex md:flex-row items-center gap-5 py-5">
           <p>Conditions of Use</p>
           <p>Privacy & Policy</p>
           <p>Press Room</p>
