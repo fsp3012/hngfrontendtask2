@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const MovieCard = ({ movie }) => {
   console.log(movie);
   return (
@@ -7,12 +8,14 @@ const MovieCard = ({ movie }) => {
         className="bg-white shadow-md rounded-lg overflow-hidden"
         data-testid="movie-card"
       >
-        <img
-          src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-          alt={movie.title}
-          className="w-full h-64 object-cover "
-          data-testid="movie-poster"
-        />
+        <Link to={`/movies/${movie.id}`}>
+          <img
+            src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+            alt={movie.title}
+            className="w-full h-64 object-cover "
+            data-testid="movie-poster"
+          />
+        </Link>
         <div className="p-4">
           <h2 className="text-xl font-semibold" data-testid="movie-title">
             {movie.title}
